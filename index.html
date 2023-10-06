@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rifqi Yafik Web_D</title>
+  </head>
+  <body>
+    <h1 align="center">Selamat Datang di Rifqi Jaya Mobil</h1>
+    <h2>Silahkan Pilih Merek Mobil Yang Kamu Inginkan:</h2>
+    <select id="merekMobil">
+      <option value="Merk">Merk</option>
+      <option value="Toyota">Toyota</option>
+      <option value="Honda">Honda</option>
+      <option value="Nissan">Nissan</option>
+      <option value="Ford">Ford</option>
+      <option value="Chevrolet">Chevrolet</option>
+    </select>
+    <button onclick="cekMerek(), tampilkanSeriMobil()">Cek Merek</button>
+    <p id="hasilMerek"></p>
+    <h3>Seri Mobil:</h3>
+    <div id="seriList">
+      <!-- Seri mobil akan ditampilkan di sini -->
+    </div>
+
+    <h2 style="color: blueviolet">
+      Kamu juga dapat memilih Merek Mobil berdasarkan Dana yang kamu punya!!!
+    </h2>
+    <label for="danaInput">Dana yang Dimiliki (/Juta Rupiah):</label>
+    <input type="number" id="danaInput" />
+    <button onclick="tampilkanMerekMobil()">Tampilkan Merek Mobil</button>
+
+    <h3>Merek Mobil yang Dapat Dibeli:</h3>
+    <p id="hasilPencarian"></p>
+
+    <h4>Pilihan Merek Mobil (do while)</h4>
+    <ul id="loopMerekMobilDoWhile"></ul>
+
+    <h4>Pilihan Merek Mobil (while)</h4>
+    <ul id="loopMerekMobilWhile"></ul>
+
+    <h1 align="center" style="color: red">PERHATIAN!!!</h1>
+    <h2 align="center">Selalu Ada Diskon Pembelian Mobil di Hari Jum'at</h2>
+    <label for="hargaInput">Harga Mobil (/Juta Rupiah):</label>
+    <input type="number" id="hargaInput" />
+    <button onclick="hitungDiskon()">Hitung Diskon</button>
+
+    <h2>Hasil Perhitungan Diskon:</h2>
+    <p id="hasilDiskon"></p>
+
+    <script src="rejeki.js"></script>
+  </body>
+</html>
